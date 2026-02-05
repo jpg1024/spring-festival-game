@@ -3,8 +3,8 @@ import axios from 'axios'
 
 // 内置数据路径
 const BUILT_IN_DATA = {
-  riddle: '/data/riddles.json',
-  'brain-teaser': '/data/brainTeasers.json'
+  riddle: '/spring-festival-game/data/riddles.json',
+  'brain-teaser': '/spring-festival-game/data/brainTeasers.json'
 }
 
 export function useGameContent(gameType) {
