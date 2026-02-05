@@ -256,48 +256,6 @@ export default defineConfig({
 - 环境变量：VITE_BASE_PATH=/spring-festival-game/
 - 部署目标：GitHub Pages
 
-## 重要修复记录
-
-### 转盘抽奖逻辑修复
-
-#### 问题1：指针方向理解错误
-- 原始问题：指针指向的奖项与显示结果不一致
-- 原因：SVG坐标系中，0°在3点钟方向，12点钟方向是270°
-- 解决：正确使用270°作为指针位置
-
-#### 问题2：角度计算公式错误
-- 原始问题：奖项中心角度计算不正确
-- 解决：从"index * anglePerSector + anglePerSector / 2"改为"index * anglePerSector - 90 + anglePerSector / 2"
-
-#### 问题3：负角度转换问题
-- 原始问题：计算出的角度为负数导致后续计算错误
-- 解决：添加角度转换：`if (prizeCenterAngle < 0) prizeCenterAngle += 360`
-
-#### 问题4：最终方案
-- 改为随机旋转，停止后计算12点钟方向的扇区
-- 公式：`sectorIndex = Math.floor((angleAt12Clock + 90) / anglePerSector) % count`
-- 优点：逻辑简单，无需预先选择奖项，更符合真实抽奖
-
-### Vant组件注册
-- 问题：组件解析失败
-- 解决：在main.js中注册Vant
-
-### Toast API变更
-- 问题：Toast.success不是函数
-- 解决：改为`showToast({ type: 'success', message: '...' })`
-
-### 倒计时自动启动
-- 问题：倒计时不启动
-- 解决：在onMounted中调用startCountdown
-
-### 转盘transform-origin
-- 问题：旋转时转盘消失
-- 解决：设置transformOrigin: '160px 160px'
-
-### Node.js版本
-- 问题：Vite 7.3.1需要Node.js 20.19+
-- 解决：GitHub Actions使用Node.js 20
-
 ## 项目文件结构
 
 ```
@@ -387,35 +345,6 @@ npm run preview
 5. **动画性能**：使用CSS transform而非left/top
 6. **移动端兼容**：测试不同屏幕尺寸和浏览器
 7. **GitHub Pages路径**：构建时需设置正确的base路径
-
-## 迭代历史
-
-### 初始版本
-- 基础游戏框架
-- 猜灯谜和脑筋急转弯功能
-- 倒计时系统
-- 答题反馈
-
-### 第二版
-- 移除暗黑模式
-- 添加幸运大转盘
-- 优化转盘显示
-
-### 第三版
-- 重写转盘逻辑
-- 添加扇区突出显示
-- 增强视觉效果
-
-### 第四版
-- 添加春节背景装饰
-- 优化转盘动画
-- 增强中奖效果
-
-### 最终版本
-- 完整的春节主题装饰
-- 优化的转盘抽奖逻辑
-- 完善的部署配置
-- 详细的项目文档
 
 ## 总结
 
