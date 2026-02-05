@@ -1,7 +1,8 @@
 {
   "name": "spring-festival-game",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "春节主题小游戏 - 猜灯谜、脑筋急转弯、幸运大转盘",
   "type": "module",
   "scripts": {
     "dev": "vite",
