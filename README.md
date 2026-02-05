@@ -114,7 +114,9 @@ npm run preview
 
 1. 将代码推送到 GitHub 仓库的 `main` 分支
 2. 在 GitHub 仓库设置中启用 GitHub Pages
-3. 自动部署完成后，访问 `https://你的用户名.github.io/spring-festival-game/`
+3. 自动部署完成后，访问：**https://jpg1024.github.io/spring-festival-game/**
+
+🎉 **在线体验地址**：https://jpg1024.github.io/spring-festival-game/
 
 ### 手动部署
 
