@@ -1,0 +1,63 @@
+/* 全局样式入口文件 */
+
+@import './variables.css';
+@import './theme.css';
+@import './common.css';
+@import './animations.css';
+
+/* Vant 样式覆盖 */
+.van-button--primary {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  border: none;
+}
+
+.van-button--primary:active {
+  background: var(--color-primary-dark);
+}
+
+.van-dialog {
+  background: var(--bg-color-light);
+  border-radius: var(--radius-lg);
+  border: 2px solid var(--color-primary);
+}
+
+.van-dialog__header {
+  color: var(--color-primary);
+  font-weight: var(--font-weight-bold);
+}
+
+.van-toast {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: var(--radius-md);
+}
+
+.van-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+}
+
+.van-popup {
+  border-radius: var(--radius-lg);
+}
+
+.van-nav-bar {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  color: var(--color-white);
+}
+
+.van-nav-bar__title {
+  color: var(--color-white);
+  font-weight: var(--font-weight-bold);
+}
+
+.van-nav-bar .van-icon {
+  color: var(--color-white);
+}
+
+.van-cell {
+  background: transparent;
+}
+
+.van-cell:active {
+  background: var(--bg-color-light);
+}

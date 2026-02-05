@@ -1,0 +1,82 @@
+/* CSS 变量定义 - 春节主题 */
+
+:root {
+  /* 主色调 - 春节红金配色 */
+  --color-primary: #e60012;          /* 中国红 */
+  --color-primary-dark: #c4000f;     /* 深红色 */
+  --color-primary-light: #ff1a2e;    /* 亮红色 */
+
+  --color-gold: #ffd700;             /* 金色 */
+  --color-gold-dark: #e6c200;        /* 深金色 */
+  --color-gold-light: #ffdf33;       /* 亮金色 */
+
+  --color-white: #ffffff;            /* 白色 */
+  --color-black: #000000;            /* 黑色 */
+
+  /* 辅助色 */
+  --color-success: #07c160;          /* 成功绿 */
+  --color-error: #ee0a24;            /* 错误红 */
+  --color-warning: #ff976a;          /* 警告橙 */
+  --color-info: #1989fa;             /* 信息蓝 */
+
+  /* 背景色 */
+  --bg-color: #fff8f0;               /* 暖白背景 */
+  --bg-color-light: #fffdf9;         /* 浅色背景 */
+  --bg-color-dark: #f5f5f5;          /* 深色背景 */
+
+  /* 文字颜色 */
+  --text-primary: #323233;           /* 主要文字 */
+  --text-secondary: #969799;         /* 次要文字 */
+  --text-tertiary: #c8c9cc;          /* 三级文字 */
+  --text-placeholder: #c8c9cc;       /* 占位符 */
+
+  /* 边框颜色 */
+  --border-color: #ebedf0;           /* 边框色 */
+  --border-color-light: #f2f3f5;     /* 浅边框色 */
+
+  /* 阴影 */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.16);
+
+  /* 圆角 */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-round: 999px;
+
+  /* 间距 */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 20px;
+  --spacing-xxl: 24px;
+
+  /* 字体大小 */
+  --font-size-xs: 10px;
+  --font-size-sm: 12px;
+  --font-size-md: 14px;
+  --font-size-lg: 16px;
+  --font-size-xl: 18px;
+  --font-size-xxl: 20px;
+  --font-size-title: 24px;
+  --font-size-large: 28px;
+
+  /* 字体粗细 */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* 过渡动画 */
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.5s ease;
+
+  /* z-index */
+  --z-index-normal: 1;
+  --z-index-modal: 1000;
+  --z-index-toast: 2000;
+  --z-index-popup: 3000;
+}
